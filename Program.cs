@@ -11,13 +11,13 @@
 
         do 
         {
-            Console.Write("Enter a number:"); // Collects output from
+            Console.Write("Enter a number:"); // Collects output from user
 
-            string userInput = Console.ReadLine();
+            string userInput = Console.ReadLine(); //Reads input 
 
-            int numberEntered = int.Parse(userInput);
+            int numberEntered = int.Parse(userInput); //Parse input as integer while also validating that user only enters integers. 
 
-            if (numberEntered > guessNumber)
+            if (numberEntered > guessNumber) 
             {
                 Console.WriteLine("Too High...Guess Lower!");
             }
@@ -25,7 +25,7 @@
             {
                 Console.WriteLine("Too Low...Guess Higher");
             }
-            else if (numberEntered == guessNumber)
+            else if (numberEntered == guessNumber) //If the user input is equal to the guess number, user wins.
             { 
                 Console.WriteLine("YOU WIN!");
                 win = true;
